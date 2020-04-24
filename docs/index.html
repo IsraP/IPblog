@@ -42,8 +42,9 @@ h1.ip{
 }
 
 @keyframes name{
-    0% { opacity: 0; margin-left: 40px; width: 0;}
-    100% { opacity: 1; margin-left:0px; width: 100%;}
+    0% { opacity: 0; margin-left: 30px; width: 0;}
+    50%{margin-left:0px; opacity: 1;  }
+    100% { width: 100%;}
     
 }
 
@@ -53,11 +54,20 @@ h1.ip{
 .text-CMD{
     color: #00ff00;
 }
+.text-neonblue{
+    color: #6df1d8
+}
+.text-neonpink{
+    color: #d30cb8
+}
 .bg-shell{
     background-color: #012456;
 }
 .text-shell{
     color: #a9b0cc;
+}
+.text-black{
+    color: #000000
 }
 .basis {
     font-family: 'basis33', Arial, sans-serif;
@@ -96,8 +106,8 @@ h1.ip{
                     </a>
                 </div>
                 <div class="col-8 d-flex justify-content-end">
-                    <a class="nav-item text-CMD px-2   active" href="#"><strong>Home</strong></a>
-                    <a class="nav-item text-CMD px-2  " href="#"><strong>Produtos</strong></a>
+                    <a class="nav-item text-CMD px-2   active" href="index.html"><strong>Home</strong></a>
+                    <a class="nav-item text-CMD px-2  " href="produtos.html"><strong>Produtos</strong></a>
                     <a class="nav-item text-CMD px-2  " href="#"><strong>Sugeridos</strong> </a> 
                     <a class="nav-item text-CMD px-2  " href="#"><strong>Contato</strong></a>
                 </div>
@@ -119,8 +129,8 @@ h1.ip{
         </div>
         <div class="container mt-5">
             <div class="row text-CMD basis">
-                <h1 class="col-12">Quem sou eu?</h1>
-                <p class="col-12 bigger">
+                <h1 class="col-12">> Quem sou eu?_</h1>
+                <p class="col-12 bigger text-shell">
                     Hey! Meu nome é Israel Péres de Oliveiros Leandro, sou um aluno de Ciência da Computação
                     na PUC Minas, unidade Coração Eucarístico, e esse é o meu Blog Pessoal!<br>
                     Minha formação academica se deu no Colégio Magnum, unidade Cidade Nova, uma escola comple
@@ -128,8 +138,51 @@ h1.ip{
                     ingressei na PUC estudando o que eu sempre tive interesse em, que é a computação. Agora,
                     aprendendo o que eu sempre gostei, estou no caminho certo para mais conhecimento e para
                     a realização de minhas metas e sonhos.
-                    
                 </p>
+            </div>
+            <div class="row text-CMD basis">
+                <h1 class="col-12">> O que você encontra nesse site?_</h1>
+                <p class="col-12 bigger text-shell">
+                    Nesse site você terá acesso aos produtos feitos por mim, na plataforma do Scratch e da Star
+                    logo Nova, assim como aos conteúdos sugeridos do site.                         
+                </p>
+            </div>
+            <div class="row text-CMD">
+                <h1 class="col-12 basis">> Por onde começar?_</h1>
+                <div class="row mt-3 mb-3 mx-1">
+                    <div class="col-6">
+                        <div class="card">
+                            <img class="card-img-top" src="media/Synthpong.png" alt="Synthpong image">
+                            <div class="card-body">
+                                <h3 class="card-title text-neonblue">
+                                    Synth<span class="text-neonpink">Pong</span>
+                                </h3>
+                                <p class="card-text text-black">
+                                    Um jogo pong ao estilo synthwave que fica mais difícil conforme você o joga!
+                                     Aborda assuntos como Ciência da Computação, Cidadania e entre outros!
+                                     Feito no Scratch.
+                                </p>
+                                <a href="#" class="btn btn-primary">Jogar!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <img class="card-img-top" src="media/Disease.png" alt="Synthpong image">
+                            <div class="card-body">
+                                <h3 class="card-title text-black">
+                                    Ecossystem<span class="text-danger"> Disease</span> Simulator
+                                </h3>
+                                <p class="card-text text-black">
+                                    Um simulador de pseudo-ecossistemas que possuem tartarugas marinhas e 
+                                    baleias orcas, num ambiente contaminado com uma doença. Inclui interações
+                                    de predação, infecção e Imunidade.
+                                </p>
+                                <a href="#" class="btn btn-primary">Simular!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
