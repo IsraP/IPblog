@@ -1,0 +1,115 @@
+  
+img.IPlogo{
+    border-radius: 50%;
+    border-color: #00ff00;
+    border-style: solid;
+    border-width: 2px;
+}
+
+img.IPpic{
+    border-radius: 50%;
+    border-color: #00ff00;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.flipContainer {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flipInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipContainer:hover .flipInner {
+    transform: rotateY(180deg);
+}
+
+.side1, .side2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.side2 {
+    transform: rotateY(180deg);
+}
+
+img.anim{
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.border-CMD{
+    border-color: #00ff00;
+    border-style: solid;
+    border-width: 0.5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 2px;
+}
+
+@keyframes logo{
+    from { opacity: 0; margin-left: 40px; }
+    to { opacity: 1; margin-left:0px; }
+}
+
+h1.ip{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: name 3.5s steps(40, end);
+
+}
+
+@keyframes name{
+    0% { opacity: 0; margin-left: 30px; width: 0;}
+    50%{margin-left:0px; opacity: 1;  }
+    100% { width: 100%;}
+    
+}
+
+.bg-black{
+    background-color: #000000;
+}
+.text-CMD{
+    color: #00ff00;
+}
+.text-neonblue{
+    color: #6df1d8
+}
+.text-neonpink{
+    color: #d30cb8
+}
+.bg-shell{
+    background-color: #012456;
+}
+.text-shell{
+    color: #a9b0cc;
+}
+.text-black{
+    color: #000000
+}
+.btn-neonblue{
+    background-color: #6df1d8 !important;
+}
+.basis {
+    font-family: 'basis33', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+.bigger{
+    font-size: 23px;
+}
+
