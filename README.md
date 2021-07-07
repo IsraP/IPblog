@@ -1,2 +1,2 @@
 # IPblog
-A blog that is all about me and about what I like doing
+A blog I made for the Programming Initiation Lab discipline.
